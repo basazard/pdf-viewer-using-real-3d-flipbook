@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs | Astra Visteon Indonesia</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/flipbook.style.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+
+    <script src="js/flipbook.min.js"></script>
+
+    <script type="text/javascript">
+    
+        $(document).ready(function () {
+            $("#container").flipBook({
+                pdfUrl: "./pdf/full.pdf",
+                tableOfContent : [
+                {
+                    title:"1. Cover",
+                    page:"1",
+                },
+                {
+                    title:"2. Kebijakan Perusahaaan",
+                    page:"2",
+                },
+                {
+                    title:"3. Surat Putusan Disnaker",
+                    page:"4",
+                },
+                {
+                    title:"4. Daftar Isi",
+                    page:"6",
+                },
+                {
+                    title: "Bab I Umum",
+                    page: "11",
+                },
+                {
+                    title: "Bab II Kerjasama Bipartit",
+                    page: "14",
+                },
+                {
+                    title: "Bab III Hubungan Kerja",
+                    page: "14",
+                },
+                {
+                    title: "Bab IV Waktu Kerja",
+                    page: "17",
+                },
+                {
+                    title: "Bab V Pengupahan",
+                    page: "17",
+                },
+                {
+                    title: "Bab VI Jaminan Sosial dan Kesejahteraan",
+                    page: "21",
+                },
+                {
+                    title: "Bab VII Penghargaan",
+                    page: "25",
+                },
+                {
+                    title: "Bab VIII Keselamatan dan Kesehatan Kerja",
+                    page: "26",
+                },
+                {
+                    title: "Bab IX Cuti dan Izin Meninggalkan Pekerjaan dengan Mendapat Upah",
+                    page: "28",
+                },
+                {
+                    title: "Bab X Ketentuan Tata Tertib dan Aturan Kedisiplinan",
+                    page: "29",
+                },
+                {
+                    title: "Bab XI Sanksi Sanksi Terhadap Pelanggaran Tata Tertib dan Aturan Keselamatan dan Kesehatan Kerja",
+                    page: "35",
+                },
+                {
+                    title: "Bab XII Pemutusan Hubungan Kerja (PHK)",
+                    page: "40",
+                },
+                {
+                    title: "Bab XIII Penyelesaian Keluh Kesah",
+                    page: "45",
+                },
+                {
+                    title: "Bab XIV Peraturan Pelaksanaan",
+                    page: "46",
+                },
+                {
+                    title: "Bab XV Ketentuan Penutup",
+                    page: "47",
+                },
+                {
+                    title: "5. Kebijakan Teknologi Informasi",
+                    page: "49",
+                }
+                ],
+                layout:2,
+                zoomMin:0.9,
+                
+                btnSearch : {enabled : 'true', vAlign:'top', hAlign:'left'},
+                btnToc : {vAlign:'top', hAlign:'left'},
+                btnThumbs : {vAlign:'top', hAlign:'left'},
+
+                btnZoomIn : {vAlign:'bottom', hAlign:'right'},
+                btnZoomOut : {vAlign:'bottom', hAlign:'right'},
+                btnSound : {vAlign:'bottom', hAlign:'right'},
+                btnExpand : {vAlign:'bottom', hAlign:'right'},
+            
+                currentPage:{vAlign: 'top', hAlign:'center'},
+
+                viewMode:'3d',
+
+                skin:'dark',
+
+                menu2Transparent:true,
+                menu2OverBook:true,
+
+                menuMargin:10,
+                menuTransparent:true,
+                menuOverBook:true,
+
+            });
+        })
+    </script>
+</head>
+<body>
+    <div id="container"></div>
+</body>
+</html>
